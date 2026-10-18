@@ -14,6 +14,12 @@ Release candidate 0.1.0, 19 October 2026 (Europe/Istanbul).
 
 The MP4s and posters under `docs/assets/` are actual generated render artifacts, not mock screenshots.
 
+## GitHub and hosted demo
+
+- A clean Ubuntu runner installed the locked dependencies and Chromium, passed all 14 tests and the release check, rendered the demo and fully decoded its output: [successful CI run](https://github.com/oguzhankayan/motion-engine/actions/runs/39176750358).
+- The [GitHub Pages demo](https://oguzhankayan.github.io/motion-engine/) played and decoded all three video formats at desktop and mobile widths. Posters and logos decoded without browser errors or horizontal overflow.
+- A separate Desktop clone was installed successfully and its Node, FFmpeg and browser availability checked.
+
 ## Live API evidence, without spending
 
 Read the current first-party Raywake API documentation and compared the client with the gateway's public contract. Quotes for the bundled image and video requests were accepted through the connected Raywake account on this release date: Nano Banana Pro at $0.24 USD and a 5-second, 720p Wan 3.0 Prime video without audio at $0.45 USD at the time of the check. The response supplied `quote_id`, `price_usd`, `expires_at` and normalized input. No generation was started, no balance was reserved, and the expiring quote itself is not committed.
@@ -35,4 +41,4 @@ node bin/motion-engine.mjs demo --format portrait --out output/portrait
 node bin/motion-engine.mjs demo --format square --out output/square
 ```
 
-See each output's `film-qa.json`. Verification of one operating system does not establish all-platform support: macOS was checked locally; the repository includes a Linux CI render job. Windows installation is documented but was not run on a Windows machine.
+See each output's `film-qa.json`. Verification of one operating system does not establish all-platform support: macOS was checked locally and the Linux CI render completed successfully. Windows installation is documented but was not run on a Windows machine.

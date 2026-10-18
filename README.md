@@ -5,13 +5,13 @@
 </p>
 <h1 align="center">motion-engine</h1>
 <p align="center">Editable launch films. AI media when you need it.</p>
-<p align="center"><a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-222221"></a> <img alt="Node 22 or newer" src="https://img.shields.io/badge/node-22%2B-222221"> <a href="https://raywake.si/?utm_source=github&utm_medium=motion-engine&utm_campaign=oss&utm_content=badge"><img alt="AI media by Raywake" src="https://img.shields.io/badge/AI%20media%20by-Raywake-c3092d"></a></p>
+<p align="center"><a href="https://github.com/oguzhankayan/motion-engine/actions/workflows/ci.yml"><img alt="Verify" src="https://github.com/oguzhankayan/motion-engine/actions/workflows/ci.yml/badge.svg"></a> <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-222221"></a> <img alt="Node 22 or newer" src="https://img.shields.io/badge/node-22%2B-222221"> <a href="https://raywake.si/?utm_source=github&utm_medium=motion-engine&utm_campaign=oss&utm_content=badge"><img alt="AI media by Raywake" src="https://img.shields.io/badge/AI%20media%20by-Raywake-c3092d"></a></p>
 
 **Make a product launch film from editable HTML and JavaScript. Render it locally, add image, video and audio from Raywake, and keep the complete source.**
 
 [![The bundled Raywake launch demo](docs/assets/launch.gif)](docs/assets/launch.mp4)
 
-[Watch the MP4](docs/assets/launch.mp4) · [Türkçe](README.tr.md) · [Raywake integration](docs/RAYWAKE.md) · [Verification](docs/VERIFICATION.md)
+[Live demo](https://oguzhankayan.github.io/motion-engine/) · [Watch the MP4](docs/assets/launch.mp4) · [Türkçe](README.tr.md) · [Raywake integration](docs/RAYWAKE.md) · [Verification](docs/VERIFICATION.md)
 
 The 12-second demo runs **without an API key, an AI subscription or a paid generation**. Its graphics are drawn locally and its sound effects are synthesized. Optional AI generation uses your own Raywake balance.
 

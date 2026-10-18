@@ -59,7 +59,7 @@ node bin/motion-engine.mjs resume output/hero.state.json
 
 If the job ID is known, resume polls it. If submission was interrupted before the ID arrived, it resends the same body and key. It never re-quotes or silently creates a fresh paid job. `submission_unknown`, `needs_review`, `needs_reconciliation` and failed jobs stop the automatic workflow. Check the job in Raywake; resume later if it has been reconciled.
 
-A successful job whose download failed can be resumed without generating again. You can also retrieve an existing job explicitly:
+A successful job whose download failed can be resumed without generating again. Missing or corrupt local files are downloaded again from the same job. Completion is recorded only after the files decode successfully. You can also retrieve an existing job explicitly:
 
 ```bash
 node bin/motion-engine.mjs download JOB_ID --out output/existing

@@ -4,7 +4,7 @@
 
 [![Raywake lansman demosu](docs/assets/launch.gif)](docs/assets/launch.mp4)
 
-[İngilizce rehber](README.md) · [MP4'ü izle](docs/assets/launch.mp4) · [Raywake bağlantısı](docs/RAYWAKE.md)
+[Canlı demo](https://oguzhankayan.github.io/motion-engine/) · [İngilizce rehber](README.md) · [MP4'ü izle](docs/assets/launch.mp4) · [Raywake bağlantısı](docs/RAYWAKE.md)
 
 Raywake ekibi tarafından geliştirildi. Kod MIT lisanslıdır. **Hazır demo API anahtarı istemez ve bakiye harcamaz.** Demodaki görseller kodla çizilir, efekt sesleri sentezlenir. Kendi yapay zekâ varlıklarını üretmek istersen Raywake hesabını bağlayabilirsin.
 
