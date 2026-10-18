@@ -1,0 +1,23 @@
+name: Verify
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test-and-render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: npx playwright-core install --with-deps chromium
+      - run: npm test
+      - run: npm run check
+      - run: npm run demo
+      - uses: actions/upload-artifact@v4
+        with:
+          name: launch-demo
+          path: output/launch/film*

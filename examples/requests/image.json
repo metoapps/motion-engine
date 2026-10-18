@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "A red ceramic cup on a wooden table, soft morning light",
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "num_images": 1,
+    "output_format": "png"
+  }
+}

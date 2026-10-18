@@ -1,0 +1,12 @@
+node_modules/
+output/
+.env
+.env.*
+!.env.example
+*.state.json
+*.state.json.lock
+*.quote.json
+*.part
+.DS_Store
+playwright-report/
+test-results/

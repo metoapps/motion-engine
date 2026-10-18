@@ -1,0 +1,20 @@
+{
+  "name": "@raywake/motion-engine",
+  "version": "0.1.0",
+  "description": "Editable launch films, product ads and motion graphics. Local rendering, optional AI media by Raywake.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "bin": { "motion-engine": "bin/motion-engine.mjs" },
+  "scripts": {
+    "demo": "node bin/motion-engine.mjs demo",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check-release.mjs",
+    "browser:install": "playwright-core install chromium",
+    "docs": "node bin/motion-engine.mjs preview docs"
+  },
+  "dependencies": { "playwright-core": "1.63.0" },
+  "repository": { "type": "git", "url": "https://github.com/oguzhankayan/motion-engine.git" },
+  "homepage": "https://github.com/oguzhankayan/motion-engine#readme",
+  "keywords": ["motion-design", "video", "animation", "raywake", "ai-video", "ffmpeg", "open-source"]
+}

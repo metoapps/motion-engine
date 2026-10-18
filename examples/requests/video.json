@@ -1,0 +1,11 @@
+{
+  "model": "wan-3.0-prime/text-to-video",
+  "input": {
+    "prompt": "A slow cinematic orbit around a red ceramic cup on a wooden table, warm morning light, steady camera, no text.",
+    "duration": 5,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "enable_thinking": false
+  }
+}
