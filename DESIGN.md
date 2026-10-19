@@ -43,3 +43,6 @@ Native video playback and keyboard-accessible format/preset controls. Show activ
 
 ## Do's and Don'ts
 Use the actual logo, preserve its proportions and negative space. Label authored example imagery and optional AI functionality. Never suggest the free demo made a paid API call.
+
+## Theme showcase boundary
+The gallery shell inherits the Raywake palette, local Manrope, prism identity and navigation. Preserve its browse-and-filter structure. Theme sheets, thumbnails and their shared styles remain in the source visual languages; Raywake tokens must never cascade into them. Source house-style classifications remain explicitly attributed to the source catalog, not labeled as Raywake compatibility.

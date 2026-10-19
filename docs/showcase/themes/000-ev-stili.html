@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>000 · Ev Stili — Creative Factory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+/* Ev stili belirteçleri: 1 zemin + 1 mürekkep + 1 sinyal (+ stone ikincil), tek aile. */
+:root{
+  --paper:#f7f7f5; --ink:#111110; --signal:#ffe000; --stone:#62625b;
+  --muted:#62625b; --line:rgba(17,17,16,.12); --brand-deep:#111110;
+  --sans:"Poppins",system-ui,sans-serif; --serif:"Poppins",system-ui,sans-serif; --mono:"Poppins",system-ui,sans-serif;
+}
+/* ===== SHARED SHEET CHROME — diğer tema sayfalarıyla aynı iskelet ===== */
+*{box-sizing:border-box;margin:0}
+body{background:#ECEBE6;color:var(--ink);font-family:var(--sans);padding:32px 40px 64px}
+.top{max-width:1400px;margin:0 auto 22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end}
+.back{font:500 13px var(--mono);color:var(--brand-deep);text-decoration:none;display:inline-block;margin-bottom:10px}
+.kicker{font:500 12px var(--mono);letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+h1{font-family:var(--serif);font-weight:600;font-size:46px;letter-spacing:-.03em;line-height:1.05;margin-top:4px}
+.dek{max-width:780px;color:#3a3a36;font-size:16px;line-height:1.55;margin-top:10px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font:500 12px var(--mono);border-radius:100px;padding:6px 12px;background:#fff;border:1px solid var(--line);color:var(--ink)}
+.grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media(max-width:1200px){.grid{grid-template-columns:repeat(2,1fr)}} @media(max-width:640px){.grid{grid-template-columns:1fr} body{padding:16px}}
+.cw{display:flex;flex-direction:column;gap:8px}
+.cell{aspect-ratio:1/1;container-type:inline-size;position:relative;overflow:hidden;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);--u:calc(100cqw/1080)}
+.lab{display:flex;justify-content:space-between;font:500 11.5px var(--mono);color:var(--muted);letter-spacing:.06em}
+.lab b{color:var(--ink)}
+.note{font-size:13.5px;line-height:1.5;color:#3a3a36} .note b{color:var(--ink)}
+.kit{max-width:1400px;margin:26px auto 0;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:22px}
+@media(max-width:1000px){.kit{grid-template-columns:1fr}}
+.panel{background:#fff;border-radius:12px;padding:18px 20px;box-shadow:0 1px 2px rgba(17,17,16,.05)}
+.panel h3{font:600 11.5px var(--mono);letter-spacing:.14em;color:var(--muted);margin-bottom:10px}
+.panel ul{padding-left:18px;font-size:14px;line-height:1.55;color:#3a3a36} .panel li{margin:3px 0} .panel li b{color:var(--ink)}
+.panel p{font-size:14px;line-height:1.55;color:#3a3a36} .panel p+p{margin-top:8px}
+.panel a{color:var(--brand-deep);word-break:break-all}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:4px;border:1px solid var(--line)}
+/* ===== THEME CSS — t000 ===== */
+.t000-f{position:absolute;inset:0;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--sans);font-variant-numeric:tabular-nums}
+.t000-f.sig{background:var(--signal)}
+.t000-k{position:absolute;left:calc(var(--u)*90);top:calc(var(--u)*90);font:500 calc(var(--u)*26)/1 var(--sans);letter-spacing:.02em;color:var(--stone)}
+.t000-sig .t000-k{color:#5c5300}
+.t000-h{font:600 calc(var(--u)*118)/1.02 var(--sans);letter-spacing:-.035em}
+.t000-w{display:inline-block}
+.t000-rise{opacity:.55;filter:blur(calc(var(--u)*6));transform:translateY(calc(var(--u)*18))}
+.t000-mk{background:linear-gradient(transparent 12%,var(--signal) 12%,var(--signal) 92%,transparent 92%);padding:0 calc(var(--u)*10);margin:0 calc(var(--u)*-10)}
+.t000-foot{position:absolute;left:calc(var(--u)*90);right:calc(var(--u)*90);bottom:calc(var(--u)*84);display:flex;justify-content:space-between;align-items:center;font:500 calc(var(--u)*26)/1 var(--sans);color:var(--stone)}
+.t000-lock{display:flex;align-items:center;gap:calc(var(--u)*16);font:600 calc(var(--u)*40)/1 var(--sans);letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.t000-mark{width:calc(var(--u)*56);height:calc(var(--u)*56);border-radius:50%;background:var(--ink);display:grid;place-items:center}
+.t000-mark svg{width:62%;height:62%}
+.t000-pill{display:inline-flex;align-items:center;gap:calc(var(--u)*14);background:var(--ink);color:var(--paper);font:600 calc(var(--u)*36)/1 var(--sans);letter-spacing:-.02em;border-radius:999px;padding:calc(var(--u)*26) calc(var(--u)*40);white-space:nowrap}
+.t000-pill.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 calc(var(--u)*3) var(--ink)}
+</style>
+</head>
+<body>
+<div class="top">
+  <div>
+    <a class="back" href="../index.html">← tüm temalar</a>
+    <div class="kicker">Tema 000 · Ev stili</div>
+    <h1>Ev Stili</h1>
+    <p class="dek">Creative Factory'nin varsayılan dili: kağıt zemin, mürekkep yazı, tek sinyal sarısı ve tek aile Poppins. Kelimeler tek tek yükselip blur'dan netleşir, her sahne tek bir fikir taşır. Filmin tek "authored moment"ı ürünün kendi dünyasından gelir: Pulse'ın izlediği çizgi, sorunun olduğu dakikada fosforlu kalemle işaretlenir.</p>
+  </div>
+  <div class="chips"><span class="chip">okunurluk ●●●</span><span class="chip">güven ●●●</span><span class="chip">efor düşük</span></div>
+</div>
+
+<div class="grid">
+  <!-- 1 · KANCA -->
+  <div class="cw"><div class="cell" id="t000-f1"><div class="t000-f">
+    <div class="t000-k">Pazartesi · 09:40</div>
+    <div class="t000-h" style="position:absolute;left:calc(var(--u)*90);right:calc(var(--u)*90);top:calc(var(--u)*300)">
+      <span class="t000-w">Bugün</span> <span class="t000-w">kaç</span> <span class="t000-w t000-mk">panoya</span><br><span class="t000-w">baktın?</span> <span class="t000-w t000-rise" style="color:var(--stone)">Yine.</span>
+    </div>
+    <div class="t000-foot"><span>38 sekme açık</span><span>12 uyarı sessizde</span></div>
+  </div></div>
+    <div class="lab"><b>1 · KANCA</b><span>0:00–0:08</span></div><p class="note"><b>Soru kelime kelime yükselir</b> (18 px + 6 px blur → net, outExpo 0,55 sn, 80 ms stagger); "panoya" oturduğu vuruşta sarı işaret soldan sağa çekilir. Son kelime stone renkte, bir vuruş gecikmeyle gelir. Alttaki iki sayı sessizce sayar.</p></div>
+
+  <!-- 2 · AÇILIŞ -->
+  <div class="cw"><div class="cell" id="t000-f2"><div class="t000-f sig t000-sig">
+    <div class="t000-k">Acme Pulse</div>
+    <div class="t000-h" style="position:absolute;left:calc(var(--u)*90);right:calc(var(--u)*90);top:calc(var(--u)*330);font-size:calc(var(--u)*132)">
+      <span class="t000-w">Sen</span> <span class="t000-w">yayınla,</span><br><span class="t000-w">Pulse</span> <span class="t000-w">izlesin.</span>
+    </div>
+    <svg viewBox="0 0 900 80" style="position:absolute;left:calc(var(--u)*90);bottom:calc(var(--u)*150);width:calc(var(--u)*900);height:calc(var(--u)*80)"><polyline points="0,40 360,40 390,40 410,12 432,68 452,40 900,40" fill="none" stroke="#111110" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <div class="t000-foot" style="color:#5c5300"><span class="t000-lock"><span class="t000-mark"><svg viewBox="0 0 24 24"><polyline points="2,12 8,12 10,6 14,18 16,12 22,12" fill="none" stroke="#ffe000" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg></span>Acme Pulse</span><span>kurgusal ürün</span></div>
+  </div></div>
+    <div class="lab"><b>2 · AÇILIŞ</b><span>0:08 (drop)</span></div><p class="note"><b>Drop'ta zemin soldan sağa sarıya döner</b> (wipe, 0,4 sn expo.inOut); kanca kelimeleri yukarı kalkıp blur'la söner, iki satırlık vaat aynı ritimle girer. Altta düz çizgi çizilir ve tek bir kalp atışı yapar: logo o atıştan doğar.</p></div>
+
+  <!-- 3 · KANIT ANI -->
+  <div class="cw"><div class="cell" id="t000-f3"><div class="t000-f">
+    <div class="t000-k">Ödeme dönüşümü · bugün</div>
+    <div style="position:absolute;left:calc(var(--u)*90);top:calc(var(--u)*150);font:600 calc(var(--u)*190)/1 var(--sans);letter-spacing:-.05em">−%18</div>
+    <div style="position:absolute;left:calc(var(--u)*96);top:calc(var(--u)*360);font:500 calc(var(--u)*30)/1.3 var(--sans);color:var(--stone)">09:42'den beri · deploy #2231 sonrası</div>
+    <!-- izlenen çizgi + fosforlu işaret -->
+    <div style="position:absolute;left:calc(var(--u)*560);top:calc(var(--u)*470);width:calc(var(--u)*170);height:calc(var(--u)*300);background:var(--signal)"></div>
+    <svg viewBox="0 0 900 300" style="position:absolute;left:calc(var(--u)*90);top:calc(var(--u)*470);width:calc(var(--u)*900);height:calc(var(--u)*300)">
+      <line x1="0" y1="299" x2="900" y2="299" stroke="#111110" stroke-opacity=".15" stroke-width="2"/>
+      <polyline points="0,90 60,84 120,96 180,80 240,92 300,78 360,88 420,82 470,90 500,210 540,236 600,230 660,240 720,226 780,238 840,232 900,236" fill="none" stroke="#111110" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="500" cy="210" r="11" fill="#111110"/>
+    </svg>
+    <div style="position:absolute;left:calc(var(--u)*560);top:calc(var(--u)*430);font:600 calc(var(--u)*24)/1 var(--sans)">09:42</div>
+    <div class="t000-foot"><span>Pulse fark etti. Karar senin.</span><span style="display:flex;gap:calc(var(--u)*14)"><span class="t000-pill" style="font-size:calc(var(--u)*30);padding:calc(var(--u)*20) calc(var(--u)*32)">Geri al</span><span class="t000-pill ghost" style="font-size:calc(var(--u)*30);padding:calc(var(--u)*20) calc(var(--u)*32)">Gördüm</span></span></div>
+  </div></div>
+    <div class="lab"><b>3 · KANIT ANI</b><span>0:12–0:32</span></div><p class="note"><b>Authored moment:</b> Pulse'ın izlediği çizgi soldan sağa çizilir ve 09:42'de düşer. Tam o noktada <b>sarı fosforlu kalem aşağıdan yukarı çekilir</b>, düşüşü editörün satır işaretlediği gibi işaretler. <span style="white-space:nowrap">−%18</span> sayarak gelir, "Geri al" bir vuruş sonra yükselir ve basılır (scale 0,95).</p></div>
+
+  <!-- 4 · CTA -->
+  <div class="cw"><div class="cell" id="t000-f4"><div class="t000-f">
+    <div class="t000-k">6 dakikada çözüldü</div>
+    <div class="t000-h" style="position:absolute;left:calc(var(--u)*90);right:calc(var(--u)*90);top:calc(var(--u)*300);font-size:calc(var(--u)*110)">
+      <span class="t000-w">Müşteri</span> <span class="t000-w t000-mk">fark</span><br><span class="t000-w t000-mk">etmeden</span> <span class="t000-w">yakalandı.</span>
+    </div>
+    <div class="t000-foot"><span class="t000-lock"><span class="t000-mark"><svg viewBox="0 0 24 24"><polyline points="2,12 8,12 10,6 14,18 16,12 22,12" fill="none" stroke="#ffe000" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg></span>Acme Pulse</span><span class="t000-pill">Ücretsiz başla <span>→</span></span></div>
+  </div></div>
+    <div class="lab"><b>4 · CTA</b><span>0:36–0:45</span></div><p class="note"><b>Sarı zemin daireyle CTA'ya çekilir</b> ve kağıt geri gelir; tek cümle kelime kelime yükselir, "fark etmeden" üstünden sarı işaret bir kez geçer. Solda logo, sağda CTA pill: ok iki kez ileri iter, sonra her şey durur ve sessizce söner.</p></div>
+</div>
+
+<div class="kit">
+  <div class="panel"><h3>BİLEŞEN KİTİ</h3><ul><li><b>Palet</b> — <span class="sw" style="background:#f7f7f5"></span>kağıt #f7f7f5 · <span class="sw" style="background:#111110"></span>mürekkep #111110 · <span class="sw" style="background:#ffe000"></span>sinyal #ffe000 · <span class="sw" style="background:#62625b"></span>stone #62625b; gradient, glow, gölge yok</li><li><b>Tipografi</b> — tek aile Poppins 500/600, harf aralığı −0,02/−0,03em; sayılarda tabular-nums, ondalıkta virgül; editoryal işte başlık için serif</li><li><b>Kinetik satır</b> — sahnenin tek cümlesi, kelime kelime girer</li><li><b>Fosforlu işaret</b> — sinyal sarısı tek vurgu; bir kelimenin ya da verinin altını çizer</li><li><b>İzlenen çizgi</b> — Pulse'ın kendi nesnesi: tek mürekkep çizgi, kalp atışı ve düşüş</li><li><b>İmza</b> — solda logo, ortada tek cümle, sağda CTA pill</li></ul></div>
+  <div class="panel"><h3>HAREKET · MÜZİK</h3><ul><li><b>riseIn</b> — kelime kelime 18 px yükselir, 6 px blur netleşir; outExpo 0,55 sn, 70–90 ms stagger; ağır kelimeler vuruşa oturur</li><li><b>riseOut</b> — 14 px yukarı kalkar, blur'la söner; inCubic 0,35 sn</li><li><b>Sahne geçişleri</b> — her geçiş farklı: yatay wipe, maske, CTA'dan daire; çift pozlama yok, eski içerik çıkar, yenisi girer</li></ul></div>
+  <div class="panel"><h3>NEDEN / RİSK · UYARLA</h3><p>Sessiz akışta sakin zemin ve tek fikir, parlak GIF'lerin arasında en çok okunan şeydir; zanaati hareket değil, işaretlenen an gösterir. Risk: sade dil, fikir zayıfsa boş görünür. Authored moment'ı konunun kendi dünyasından bulmadan başlama.</p><p><b>Ürününe uyarla:</b> Sinyal rengini markanın tek vurgu rengine çevir, izlenen çizginin yerine ürünün kendi nesnesini koy (sipariş satırı, ölçü, takvim, editör düzeltmesi); kalan her şey aynı kalır.</p><p><b>Dayanak:</b> <a href="../../TASARIM_SISTEMI.md">TASARIM_SISTEMI.md</a> (renk, tipografi, hareket sözlüğü, anlatı yapısı)</p></div>
+</div>
+</body>
+</html>

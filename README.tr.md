@@ -4,7 +4,7 @@
 
 [![Raywake lansman demosu](docs/assets/launch.gif)](docs/assets/launch.mp4)
 
-[Canlı demo](https://oguzhankayan.github.io/motion-engine/) · [İngilizce rehber](README.md) · [MP4'ü izle](docs/assets/launch.mp4) · [Raywake bağlantısı](docs/RAYWAKE.md)
+[Tema showcase](https://oguzhankayan.github.io/motion-engine/showcase/) · [Canlı demo](https://oguzhankayan.github.io/motion-engine/) · [İngilizce rehber](README.md) · [MP4'ü izle](docs/assets/launch.mp4) · [Raywake bağlantısı](docs/RAYWAKE.md)
 
 Raywake ekibi tarafından geliştirildi. Kod MIT lisanslıdır. **Hazır demo API anahtarı istemez ve bakiye harcamaz.** Demodaki görseller kodla çizilir, efekt sesleri sentezlenir. Kendi yapay zekâ varlıklarını üretmek istersen Raywake hesabını bağlayabilirsin.
 
@@ -88,6 +88,10 @@ Etsy Engine'in hazırladığı ürün görselinin yolunu `media.json` dosyasına
 
 ## Kapsam
 
-İlk sürüm kodla düzenlenen bir üretim aracıdır. Görsel zaman çizelgesi veya tek cümleden otomatik reklam yazarı içermez. Orijinal motion-kit çalışma klasörü, müşteri işleri ve 100 temalık arşiv bu pakete dahil değildir.
+İlk sürüm kodla düzenlenen bir üretim aracıdır. Görsel zaman çizelgesi veya tek cümleden otomatik reklam yazarı içermez. Orijinal motion-kit çalışma klasörü ve müşteri işleri bu pakete dahil değildir. Tema referansları aşağıdaki showcase içinde, tasarımları korunarak sunulur.
 
 Kod MIT lisanslıdır. Kaynaklar ve lisanslar: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## Tema showcase
+
+[101 temayı keşfet](https://oguzhankayan.github.io/motion-engine/showcase/). Galerinin arayüzü Raywake kimliğini kullanır; temaların tasarımları ve önizlemeleri korunmuştur. 100 tema MIT lisanslı saas-motion-kit projesinden, 000 ise mevcut çalışma alanındaki ek ev stilinden gelir. Bunlar storyboard referanslarıdır; hazır video şablonları değildir.

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Raywake-branded theme showcase with 101 preserved storyboard references, source attribution and original theme assets.
+
 ## 0.1.0
 
 - Independent motion-engine CLI with an editable, keyless Raywake launch demo.

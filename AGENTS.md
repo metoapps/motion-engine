@@ -10,3 +10,5 @@ This repository is independent of the original motion-kit workspace. Never edit 
 - Render changed demo scenes and inspect the actual poster/contact sheet at landscape, portrait and square ratios.
 - Preserve THIRD_PARTY_NOTICES.md and bundled font/saas-motion-kit licenses.
 - Before release: `npm test`, `npm run check`, a real demo render and full FFmpeg decode.
+
+- Theme designs in `docs/showcase/themes/` and their shared `docs/showcase/assets/` files must remain unchanged. Brand updates belong only to the showcase shell (`index.html`, `showcase.css`, `showcase.js`). `SOURCES.json` records the preserved file hashes.

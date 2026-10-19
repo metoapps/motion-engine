@@ -16,7 +16,7 @@ Publish an independent motion-engine repository that demonstrates Raywake throug
 Compose and render precise HTML motion locally; optionally generate image, video and audio assets through one Raywake API connection. First-run demo needs no API key.
 
 ## Capabilities and Constraints
-The flagship example is a Raywake product launch, explicitly selected by the owner. Include editable source, a rendered demo and clear installation instructions. Never infer permission to make paid generations from rendering or testing. No customer projects, credentials or machine-specific work files in the release.
+The flagship example is a Raywake product launch, explicitly selected by the owner. Include editable source, a rendered demo and clear installation instructions. The theme showcase presents 101 existing storyboard references with a Raywake-branded browsing shell; theme designs and previews remain unchanged. Never infer permission to make paid generations from rendering or testing. No customer projects, credentials or machine-specific work files in the release.
 
 ## Brand Commitments
 motion-engine by Raywake. Reuse the approved Raywake prism logo and crimson/charcoal identity. English primary documentation, Turkish companion guide. The earlier Etsy Engine repository is the distribution reference.

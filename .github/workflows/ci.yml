@@ -16,8 +16,11 @@ jobs:
       - run: npx playwright-core install --with-deps chromium
       - run: npm test
       - run: npm run check
+      - run: node scripts/verify-showcase.mjs
       - run: npm run demo
       - uses: actions/upload-artifact@v4
         with:
           name: launch-demo
-          path: output/launch/film*
+          path: |
+            output/launch/film*
+            output/verification/showcase*

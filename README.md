@@ -11,7 +11,7 @@
 
 [![The bundled Raywake launch demo](docs/assets/launch.gif)](docs/assets/launch.mp4)
 
-[Live demo](https://oguzhankayan.github.io/motion-engine/) · [Watch the MP4](docs/assets/launch.mp4) · [Türkçe](README.tr.md) · [Raywake integration](docs/RAYWAKE.md) · [Verification](docs/VERIFICATION.md)
+[Theme showcase](https://oguzhankayan.github.io/motion-engine/showcase/) · [Live demo](https://oguzhankayan.github.io/motion-engine/) · [Watch the MP4](docs/assets/launch.mp4) · [Türkçe](README.tr.md) · [Raywake integration](docs/RAYWAKE.md) · [Verification](docs/VERIFICATION.md)
 
 The 12-second demo runs **without an API key, an AI subscription or a paid generation**. Its graphics are drawn locally and its sound effects are synthesized. Optional AI generation uses your own Raywake balance.
 
@@ -132,7 +132,7 @@ npm run check
 
 Tests simulate the API; they never call paid providers. CI additionally renders and decodes the bundled demo on Linux. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-This first release is a code-based production kit, not a visual timeline editor or a prompt-to-ad service. It does not contain the original studio's client archive or 100-theme library. The browser preview is silent; the exported MP4 contains the sound mix. Use trusted compositions when rendering local HTML.
+This first release is a code-based production kit, not a visual timeline editor or a prompt-to-ad service. The original studio's client archive is not included. The [theme showcase](docs/showcase/index.html) includes 100 attributed saas-motion-kit theme sheets plus the existing house-style example; their designs and assets are preserved. They are storyboard references, not prebuilt renderable films. The browser preview is silent; the exported MP4 contains the sound mix. Use trusted compositions when rendering local HTML.
 
 ## Credits and license
 

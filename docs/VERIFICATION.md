@@ -28,7 +28,13 @@ This validates current quote availability. It does not claim that the CLI made a
 
 ## Source preservation
 
-Only selected runtime, synthesized sound, font and brand files were copied into this independent repository. Source-file hashes are checked outside the release package; the original motion-kit working directory is not modified. No `.env`, client archive, job-state data, provider key or machine-specific work path is shipped.
+Selected runtime, synthesized sound, font and brand files were copied into this independent repository; the theme reference import is documented below. Source-file hashes were compared, and the original motion-kit working directory is not modified. No `.env`, client archive, job-state data, provider key or machine-specific work path is shipped.
+
+## Theme showcase update
+
+The Raywake-branded showcase adds 101 existing storyboard theme sheets. Their HTML, thumbnails, shared CSS and fonts remain byte-for-byte identical to the source; 216 hashes are recorded in [SOURCES.json](showcase/SOURCES.json). This update changes the gallery shell, not the theme designs. The original motion-kit files remain untouched.
+
+All 16 tests pass, including preservation and local-link checks. Browser verification covers 44 filter combinations (including empty results), all preview images, four screen widths (1440, 768, 390 and 320 px), and four original theme pages. Mobile filters collapse while the theme designs retain their own styles. Run `node scripts/verify-showcase.mjs` to reproduce the local check, or set `DEMO_URL` to the hosted demo root.
 
 ## Reproduce
 
