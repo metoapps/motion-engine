@@ -17,3 +17,21 @@ node bin/motion-engine.mjs render /absolute/path/to/meto-lort-output/index.html 
 **Doğrulama sınırı:** JavaScript kaynak kontrolü ve yerel hazırlama testi yapıldı. Tarayıcı erişimi bu çalışma ortamında engellendiği için Motion Engine'in gerçek MP4 render testi **henüz geçmedi**. Bu taslak, onaylanan V3 videosunun yerine henüz geçmez.
 
 Referans: [Kupon pilot taslağı](https://github.com/metoapps/Kupon/pull/14).
+
+
+## V7 ses güvenlik kapısı (zorunlu)
+
+Onaylı METO–LORT V7 üretiminde `prepare.mjs` artık **--audio** olmadan çalışmaz. Ses dosyasının SHA-256 değeri `V7-LOCK.json` ile eşleşmelidir. Böylece yanlış veya kayıp V7 kaynak müziği hazırlama aşamasında reddedilir.
+
+Gerçek render için doğrudan `motion-engine render` yerine korumalı komutu kullan:
+
+```bash
+node integrations/kupon/v3-template/render-and-check.mjs \
+  --engine /path/to/motion-engine \
+  --scene /path/to/prepared-scene \
+  --audio /path/to/METO-LORT-MUZIK-V7.wav
+```
+
+Bu komut önce `film-unverified.mp4` üretir, ardından çıkışın ses akışını, 15 saniyelik süreyi, 720×1280/24 FPS biçimini ve METO (2,6–6,4) ile LORT (7,3–11) bölümlerinin sessiz olmadığını kontrol eder. **Yalnızca tüm kontroller geçince** dosyayı `film-verified.mp4` olarak adlandırır. Kontrol başarısızsa doğrulanmış çıktı sunulmaz.
+
+Sınırlama: Seviye kontrolü çıkışın doğru melodiyi taşıdığını tek başına kanıtlamaz; bu yüzden onaylı ses hash'i de zorunlu tutulur. Bu geliştirme dalındaki yeni `render-and-check` komutunun temiz bir Motion Engine kurulumunda uçtan uca testi henüz yapılmadı; gerçek V7 MP4'üyle ses denetleyicisinin PASS, sessiz MP4'le FAIL verdiği yerel testler yapıldı.
