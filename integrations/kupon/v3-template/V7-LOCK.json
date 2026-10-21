@@ -1,0 +1,14 @@
+{
+  "version": "METO-LORT-V7",
+  "winner": "METO",
+  "loser": "LORT",
+  "duration_seconds": 15,
+  "format": "720x1280@24fps",
+  "status": "locally_verified",
+  "video_sha256": "407ccf02a0e4af4302428f70dc210ad5f90e5f126501b9601bb8b38bf481e26f",
+  "audio_sha256": "761ef05af32e825c4b61762446f4edb92ec64755bbce8f345bcd9d5e65fe4891",
+  "poster_meto_sha256": "129565b0f1ea952335f72425f0e82af4dab40f965f629a1e929ae35ce0edd0e6",
+  "poster_lort_sha256": "5d511c5126dbde8b5ebc5dbc9217832b52051a528f453b4b0a8df193f12bb949",
+  "decoded_video_frames_sha256": "276ecaaaa363cab19f2a2b85644f94cb953ca6ed00358c63d292a2ffe64f5d92",
+  "note": "Hashes refer to the approved files distributed separately, not stored in the git repository; no live Kupon changes."
+}
