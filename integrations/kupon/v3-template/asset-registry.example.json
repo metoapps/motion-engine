@@ -1,0 +1,11 @@
+{
+  "_note": "Fill with approved original full-screen posters and approved music before production. Empty means NOT READY. No V7 METO/LORT images should be reused as another person's portrait.",
+  "players": {
+    "meto": {"champion": "", "loser": ""},
+    "lort": {"champion": "", "loser": ""},
+    "fero": {"champion": "", "loser": ""},
+    "latte": {"champion": "", "loser": ""},
+    "josh": {"champion": "", "loser": ""}
+  },
+  "music": {"victory": "", "defeat": ""}
+}
